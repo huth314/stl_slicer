@@ -30,8 +30,6 @@ The STL Slicer requires Python 3.x and the Python packages numpy, scipy and pand
 Usage
 -----
 .. code-block:: python
-   :caption: Simple example for usage
-   :lineos:
 
     import stl_slice as stl
     stl_object = stl.STLObject(stl_file='test.stl', scale=1.0) # e.g.
