@@ -32,7 +32,8 @@ Usage
 .. code-block:: python
    :caption: Simple example for usage
    :lineos:
-   import stl_slice as stl
+
+    import stl_slice as stl
     stl_object = stl.STLObject(stl_file='test.stl', scale=1.0) # e.g.
     # set various parameters
     pitch = 1.0 # distance between raster points for any given slice (in nm)
