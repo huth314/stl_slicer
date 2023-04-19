@@ -29,15 +29,18 @@ The STL Slicer requires Python 3.x and the Python packages numpy, scipy and pand
 
 Usage
 -----
-:code:import import stl_slice as stl
-:code:stl_object = stl.STLObject(stl_file='test.stl', scale=1.0) # e.g.
-:code:# set various parameters
-:code:pitch = 1.0 # distance between raster points for any given slice (in nm)
-:code:dzp = 0.05 # height increase in growth direction for basis dwell time (1 ms) (in nm)
-:code:dz_min = 1.0 # mininum distance between neighboring slices (in nm)
-:code:dz_max = 3.0 # maximum distance between neighboring slices (in nm)
-:code:sigma = 5.0 # FWHM of electron beam diameter for Gaussian beam (in nm)
-:code:HFW = 8500.0 # Horizontal field width of SEM image (in nm); Thermo Scientific (FEI) specific
-:code:stl_object.generate_streamfile('test.str', HFW, pitch, dzp, dz_min, dz_max, sigma) # generates streamfile for ThermoFisher (FEI) SEMs with 16-bit pattern generator
+.. code-block:: python
+   :caption: Simple example for usage
+   :lineos:
+   import stl_slice as stl
+    stl_object = stl.STLObject(stl_file='test.stl', scale=1.0) # e.g.
+    # set various parameters
+    pitch = 1.0 # distance between raster points for any given slice (in nm)
+    dzp = 0.05 # height increase in growth direction for basis dwell time (1 ms) (in nm)
+    dz_min = 1.0 # mininum distance between neighboring slices (in nm)
+    dz_max = 3.0 # maximum distance between neighboring slices (in nm)
+    sigma = 5.0 # FWHM of electron beam diameter for Gaussian beam (in nm)
+    HFW = 8500.0 # Horizontal field width of SEM image (in nm); Thermo Scientific (FEI) specific
+    stl_object.generate_streamfile('test.str', HFW, pitch, dzp, dz_min, dz_max, sigma) # generates streamfile for ThermoFisher (FEI) SEMs with 16-bit pattern generator
 
 Look into the class file for more details. The code is well documented. Use Doxygen for documentation generation.
