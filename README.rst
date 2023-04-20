@@ -29,6 +29,8 @@ The STL Slicer requires Python 3.x and the Python packages numpy, scipy and pand
 
 Usage
 -----
+Note: the slicer operates exclusively with STL-files in ASCII format.
+
 .. code-block:: python
 
     import stl_slice as stl
